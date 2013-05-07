@@ -77,7 +77,7 @@
 			that.format = (o && o.format) || 'yyyy mm dd';
 		}
 		// check that application supplied a valid date
-		if (_.arrayFind(that.format, formats) === -1) {
+		if (_.fetch(formats, that.format) === -1) {
 			throw '[ date ] - unrecognized date format ' + that.format;
 		}
 

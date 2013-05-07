@@ -59,7 +59,7 @@ test('date-utils', function (t) {
 	t.equal(D.date({'format': 'mm-dd-yyyy', 'dateIn': '2-15-2012'}).print('mm yyyy'), '1 2012');
 
 	// docId
-	t.equal(_.arrayCompare(D.date({
+	t.equal(_.identical(D.date({
 		'format': 'mm dd yyyy', 
 		'dateIn': 'december 25, 2012' }).docId().split('-').slice(1), [ '2012', '11', '25']), true);
 
