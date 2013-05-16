@@ -20,15 +20,18 @@
 /*jslint newcap: false, node: true, vars: true, white: true, nomen: true  */
 /*global _: true */
 
-(function(global) {
-	"use strict";
-	var dateUtils;
-	
+
+if (typeof _ === 'undefined') {
 	if (typeof exports !== 'undefined') {
-		dateUtils = exports;
+		var _ = require('underscore');
 	} else {
-		dateUtils = global.dateUtils = {};
+		throw new Error('js-dates depends on underscore.js');
 	}
+}
+
+(function() {
+	"use strict";
+	var dateUtils = {};
 
 	var date = function(o) {
 		var that = o || {}
@@ -234,7 +237,10 @@
 	};
 	dateUtils.toDate = toDate;
 	
-}(this));
+	// make these utilities available from Underscore.js
+	_.mixin(dateUtils);
+	
+}());
 
 
 
