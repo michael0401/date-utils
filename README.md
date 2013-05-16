@@ -1,6 +1,7 @@
-#date-utils.js
+#js-dates.js
 
-date-utils.js is a utility module which provide functions for operating with linked list. It can be used both in the [node.js](http://nodejs.org) and browser.
+js-dates.js is a utility module which provide functions for manipulating dates. 
+It can be used both in the [node.js](http://nodejs.org) and browser.
 
 ##Download
 
