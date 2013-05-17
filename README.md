@@ -3,13 +3,11 @@
 js-dates.js is a utility module which provide functions for manipulating dates. 
 It can be used both in the [node.js](http://nodejs.org) and browser.
 
-##Download
+##Example
 
-The source code is available for download from [GitHub](https://github.com/rranauro/date-utils). Besides that, you can also install using Node Package Manager ([npm](https://npmjs.org)):
+[link]()
 
-    npm install date-utils
-
-##Documentation
+##Method
 
 * [date](#date)
 * [print](#print)
@@ -245,3 +243,11 @@ __Result:__
 
     true
     
+##Install
+
+The source code is available for download from [GitHub](https://github.com/rranauro/js-dates). Besides that, you can also install using Node Package Manager ([npm](https://npmjs.org)):
+
+    npm install js-dates
+
+##License
+
